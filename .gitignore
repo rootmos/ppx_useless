@@ -1,6 +1,7 @@
 _build
 ppx_useless.native
 ppx_diverge.native
+ppx_nondeterministic.native
 *.parsetree
 *.useless.ml
 *.cmo
@@ -8,3 +9,4 @@ ppx_diverge.native
 *.useless
 *.useful
 *.diverge
+*.nondeterministic

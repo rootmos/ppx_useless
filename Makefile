@@ -12,6 +12,9 @@ SRC=$(shell git ls-files .)
 %.diverge: %.ml ppx_diverge.native
 	ocamlfind ocamlc -o $@ -ppx ./ppx_diverge.native $<
 
+%.nondeterministic: %.ml ppx_nondeterministic.native
+	ocamlfind ocamlc -o $@ -ppx ./ppx_nondeterministic.native $<
+
 %.useful: %.ml
 	ocamlfind ocamlc -o $@ $<
 
@@ -23,6 +26,9 @@ useless-utop: ppx_useless.native
 	utop -ppx ./$<
 
 diverge-utop: ppx_diverge.native
+	utop -ppx ./$<
+
+nondeterministic-utop: ppx_nondeterministic.native
 	utop -ppx ./$<
 
 clean:
