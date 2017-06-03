@@ -1,8 +1,10 @@
 _build
 ppx_useless.native
+ppx_diverge.native
 *.parsetree
 *.useless.ml
 *.cmo
 *.cmi
 *.useless
 *.useful
+*.diverge
