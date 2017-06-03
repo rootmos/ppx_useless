@@ -1,6 +1,6 @@
 ppx_useless
 ===========
-*Disclaimer* This project is a joke and should be taken seriously only by people without humor.
+**Disclaimer** This project is a joke and should be taken seriously only by people without humor.
 
 This project provides the `ppx_useless` [OCaml](https://ocaml.org/) compiler extension, that
 replaces the code with the following statement:
@@ -47,6 +47,7 @@ Here's a sample session from `utop`:
 - : int = 5
 ```
 Observe here that there is a possibility of obtaining the expected result.
+And be honest, who doesn't what more [non-determinism](https://en.wikipedia.org/wiki/Heisenbug) in their lives?
 
 Usage
 -----
