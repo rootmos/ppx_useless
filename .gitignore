@@ -1,0 +1,4 @@
+_build
+ppx_useless.native
+*.parsetree
+*.useless.ml
