@@ -5,6 +5,7 @@ let rec fib = function
 
 let () =
   let open Array in
-  init 30 (fun i -> i)
+  let n = if length Sys.argv > 1 then Sys.argv.(1) |> int_of_string else 30 in
+  init n (fun i -> i)
     |> map fib
     |> iter (fun x -> print_int x; print_newline ())
