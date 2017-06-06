@@ -1,3 +1,2 @@
 <src/*>: package(ppx_tools.metaquot),package(compiler-libs.common)
 <src>: include
-<sk>: include

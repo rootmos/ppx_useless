@@ -33,7 +33,7 @@ which provides the desired non-termination.
 An added benefit here is that there's no longer any need for messing about
 with configuration files!
 
-Here the observant reader interjects: "But even a trivial but deterministic program can be useful (e.g. /bin/true)!"
+Here the observant reader interjects: "But even a trivial but deterministic program can be useful (e.g. `/bin/true`)!"
 True, `true` is a very useful program and to address that the `ppx_nondeterministic` extension is provided.
 Here's a sample session from `utop`:
 ```
